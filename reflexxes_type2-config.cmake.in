@@ -1,0 +1,2 @@
+set(reflexxes_type2_INCLUDE_DIRS "@CMAKE_INSTALL_PREFIX@/include")
+set(reflexxes_type2_LIBRARIES "@CMAKE_INSTALL_PREFIX@/lib/libReflexxesTypeII@CMAKE_SHARED_LIBRARY_SUFFIX@")

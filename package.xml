@@ -1,0 +1,17 @@
+<package>
+  <name>reflexxes_type2</name>
+  <version>1.2.6</version>
+  <description>
+    The Reflexxes Motion Libraries provide instantaneous trajectory generation capabilities for motion control systems. Robots and servo drive controllers become capable of reacting instantaneously to unforeseen sensor signals and events.
+  </description>
+  <maintainer email="support@reflexxes.com">Reflexxes GmbH.</maintainer>
+  <url>http://www.reflexxes.ws</url>
+  <license>LGPLv3</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+
+</package>
