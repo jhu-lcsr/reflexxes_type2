@@ -6,6 +6,7 @@ include(ExternalProject)
 
 set(reflexxes_type2_VERSION 1.2.6)
 # http://www.reflexxes.ws/software/typeiirml/v1.2.6/files/ReflexxesTypeII.zip
+# https://github.com/jhu-lcsr/reflexxes_type2/blob/upstream-1.2.6/ReflexxesTypeII.zip?raw=true
 
 set(RML_HEADER_DIR "${CMAKE_BINARY_DIR}/reflexxes-prefix/src/reflexxes/include/")
 set(RML_RELEASE_LIBRARY_DIR "${CMAKE_BINARY_DIR}/reflexxes-prefix/src/reflexxes/Linux/x64/release/lib/shared/")
@@ -13,7 +14,8 @@ set(RML_DEBUG_LIBRARY_DIR "${CMAKE_BINARY_DIR}/reflexxes-prefix/src/reflexxes/Li
 
 ExternalProject_Add(
   reflexxes
-  URL http://www.reflexxes.ws/software/typeiirml/v${reflexxes_type2_VERSION}/files/ReflexxesTypeII.zip
+  URL "https://github.com/jhu-lcsr/reflexxes_type2/blob/upstream-${reflexxes_type2_VERSION}/ReflexxesTypeII.zip?raw=true"
+  DOWNLOAD_NAME ReflexxesTypeII.zip
   CONFIGURE_COMMAND ""
   BINARY_DIR reflexxes-prefix/src/reflexxes/Linux
   BUILD_COMMAND make clean64 all64
